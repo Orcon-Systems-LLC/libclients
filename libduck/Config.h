@@ -15,7 +15,7 @@ namespace Duck {
 		std::map<std::string, std::string>& operator[](const std::string& name);
 		std::map<std::string, std::string>& section(const std::string& name);
 		std::map<std::string, std::string>& defaults();
-		bool has_section(const std::string& name);
+		bool has_section(const std::string& name);//bins sectionS
 
 		static ResultRet<Config> read_from(const Path& filename);
 		static ResultRet<Config> read_from(InputStream& stream);
